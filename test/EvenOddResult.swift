@@ -31,5 +31,5 @@ class EvenOddResult: UIViewController
         mylabel.frame = CGRect(x: 40, y: 100, width: view.width-80, height: 60)
     }
     
-//    
+  
 }

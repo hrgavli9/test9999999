@@ -17,14 +17,14 @@ class ViewController: UIViewController {
         label.textColor = .white
         return label
     }()
-    private let myLabel1:UILabel = {
-    let label=UILabel()
-    label.text="Label 2"
-    label.textAlignment = .center
-    label.backgroundColor = .brown
-        label.textColor = .yellow
-    return label
-    }()
+//    private let myLabel1:UILabel = {
+//    let label=UILabel()
+//    label.text="Label 2"
+//    label.textAlignment = .center
+//    label.backgroundColor = .brown
+//        label.textColor = .yellow
+//    return label
+//    }()
     
     private let mytextfield:UITextField = {
        let mytext=UITextField()
@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         view.addSubview(myLabel)
-        view.addSubview(myLabel1)
+//        view.addSubview(myLabel1)
         view.addSubview(mytextfield)
         view.addSubview(mybutton)
         // Do any additional setup after loading the view.
@@ -58,7 +58,7 @@ class ViewController: UIViewController {
         
         mytextfield.frame=CGRect(x:40,y:myLabel.bottom+100,width: view.width-80,height: 50)
         mybutton.frame=CGRect(x:40,y:mytextfield.bottom+20,width: view.width-80,height: 50)
-        myLabel1.frame=CGRect(x:40,y:mybutton.bottom+30,width: view.width-80,height: 50)
+//        myLabel1.frame=CGRect(x:40,y:mybutton.bottom+30,width: view.width-80,height: 50)
     }
 
     @objc private func checkevenodd()
